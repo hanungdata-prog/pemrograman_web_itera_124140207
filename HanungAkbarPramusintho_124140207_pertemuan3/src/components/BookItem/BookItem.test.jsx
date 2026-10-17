@@ -13,7 +13,7 @@ describe('BookItem', () => {
 
     expect(screen.getByText('Laskar Pelangi')).toBeInTheDocument()
     expect(screen.getByText('Andrea Hirata')).toBeInTheDocument()
-    expect(screen.getByText('Dimiliki')).toBeInTheDocument()
+    expect(screen.getByText('Status: Dimiliki')).toBeInTheDocument()
   })
 
   test('memanggil onHapus dengan id buku setelah dikonfirmasi', () => {

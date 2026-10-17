@@ -13,8 +13,8 @@ function BookItem({ buku, onEdit, onHapus }) {
     <li className="book-item">
       <div>
         <h3>{buku.judul}</h3>
-        <p>{buku.penulis}</p>
-        <span className={`status status-${buku.status}`}>{labelStatus(buku.status)}</span>
+        <p className="penulis">{buku.penulis}</p>
+        <p className="status-buku">Status: {labelStatus(buku.status)}</p>
       </div>
       <div className="aksi">
         <button className="btn" onClick={() => onEdit(buku)}>

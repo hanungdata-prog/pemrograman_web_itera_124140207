@@ -207,8 +207,8 @@ function tampilkanTugas() {
                     <div class="item-isi">
                         <strong>${tugas.judul}</strong>
                         <span>${tugas.matkul} &middot; ${formatTanggal(tugas.deadline)}</span>
+                        <small class="sisa-waktu ${kelasDeadline}">${tugas.labelDeadline()}</small>
                     </div>
-                    <span class="label-deadline ${kelasDeadline}">${tugas.labelDeadline()}</span>
                     <button class="tombol-teks" data-aksi="edit" data-id="${tugas.id}">Edit</button>
                     <button class="tombol-teks merah" data-aksi="hapus" data-id="${tugas.id}">Hapus</button>
                 </li>
@@ -231,9 +231,8 @@ function tampilkanJadwal() {
             <li class="item ${hari === hariIni ? "hari-ini" : ""}">
                 <div class="item-isi">
                     <strong>${matkul}</strong>
-                    <span>${hari}, ${jam} &middot; ${ruang}</span>
+                    <span>${hari}, ${jam} &middot; ${ruang} ${hari === hariIni ? "(hari ini)" : ""}</span>
                 </div>
-                ${hari === hariIni ? `<span class="label-deadline dekat">Hari ini</span>` : ""}
                 <button class="tombol-teks" data-aksi="edit" data-id="${id}">Edit</button>
                 <button class="tombol-teks merah" data-aksi="hapus" data-id="${id}">Hapus</button>
             </li>

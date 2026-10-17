@@ -15,30 +15,17 @@
 }
 
 .book-item p {
-  margin: 2px 0 6px;
-  color: #666;
+  margin: 2px 0 0;
   font-size: 14px;
 }
 
-.status {
-  font-size: 12px;
-  padding: 3px 8px;
-  border-radius: 10px;
+.book-item .penulis {
+  color: #666;
 }
 
-.status-milik {
-  background: #e3f0ff;
-  color: #1c5fb8;
-}
-
-.status-baca {
-  background: #fff3d6;
-  color: #9a6400;
-}
-
-.status-beli {
-  background: #f1e6fa;
-  color: #7a3fa0;
+.book-item .status-buku {
+  color: #444;
+  font-size: 13px;
 }
 
 .book-item .aksi {

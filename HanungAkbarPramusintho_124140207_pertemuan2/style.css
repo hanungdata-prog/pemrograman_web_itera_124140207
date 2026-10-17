@@ -176,7 +176,7 @@ select:focus {
     padding: 6px 12px;
     border: 1px solid #cbd5e1;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 13px;
 }
@@ -223,29 +223,22 @@ select:focus {
     color: #9ca3af;
 }
 
-.item.hari-ini {
-    background-color: #fff8eb;
-    padding-left: 8px;
-    border-radius: 6px;
+.item.hari-ini strong {
+    color: #1d3557;
 }
 
-.label-deadline {
+.sisa-waktu {
     font-size: 12px;
-    padding: 3px 8px;
-    border-radius: 10px;
-    background-color: #e8f0fe;
-    color: #1d4ed8;
-    white-space: nowrap;
+    color: #6b7280;
 }
 
-.label-deadline.dekat {
-    background-color: #fff1d6;
+.sisa-waktu.dekat {
     color: #b45309;
 }
 
-.label-deadline.lewat {
-    background-color: #fde2e1;
+.sisa-waktu.lewat {
     color: #b91c1c;
+    font-weight: bold;
 }
 
 .kosong {

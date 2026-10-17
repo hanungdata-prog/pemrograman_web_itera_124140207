@@ -22,11 +22,11 @@ Buka `index.html` di browser. Butuh koneksi internet untuk data cuaca dan kutipa
   - Tambah, edit, dan hapus tugas
   - Centang tugas yang sudah selesai
   - Filter semua / belum selesai / selesai
-  - Diurutkan berdasarkan deadline, ada label sisa hari (warna kuning kalau mepet, merah kalau terlambat)
+  - Diurutkan berdasarkan deadline, ada keterangan sisa hari (teks kuning kalau mepet, merah kalau terlambat)
 - **Jadwal kuliah**
   - Tambah, edit, dan hapus jadwal
   - Diurutkan berdasarkan hari dan jam
-  - Jadwal hari ini diberi tanda
+  - Jadwal hari ini diberi keterangan "(hari ini)"
 - Semua data tugas dan jadwal disimpan di localStorage
 
 ## Screenshot
@@ -50,15 +50,15 @@ Semua kode JavaScript ada di `app.js`.
 | Fitur | Baris | Keterangan |
 | --- | --- | --- |
 | `const` | 1-5, 163-184 | konstanta URL, key localStorage, dan elemen DOM |
-| `let` | 117, 200, 374 | variabel yang nilainya berubah (hasil filter, kelas deadline, sapaan) |
-| Arrow function | 7, 10, 12, 61, 90, 125, 260, 284, 310 | `formatTanggal`, `duaDigit`, `keteranganCuaca`, callback map/filter/sort, event listener |
-| Template literals | 42, 45, 190, 204-215, 230-240, 379 | label deadline, info jumlah tugas, render list tugas dan jadwal |
+| `let` | 117, 200, 373 | variabel yang nilainya berubah (hasil filter, kelas deadline, sapaan) |
+| Arrow function | 7, 10, 12, 61, 90, 125, 259, 283, 309 | `formatTanggal`, `duaDigit`, `keteranganCuaca`, callback map/filter/sort, event listener |
+| Template literals | 42, 45, 190, 204-215, 230-239, 378 | label deadline, info jumlah tugas, render list tugas dan jadwal |
 | Class | 21 (`TaskItem`), 49 (`JadwalItem`), 59 (`DashboardApp`) | model data dan pengelola state aplikasi |
 | Destructuring di parameter | 22, 50, 230 | constructor class dan callback `map` jadwal |
-| Destructuring objek | 141, 154, 285, 399, 409 | ambil data dari response API dan `dataset` tombol |
+| Destructuring objek | 141, 154, 284, 398, 408 | ambil data dari response API dan `dataset` tombol |
 | Default parameter | 22, 50 | `id = Date.now()`, `selesai = false` |
 | Spread operator | 78, 84, 100, 106, 117, 129 | tambah/ubah data tanpa mengubah array lama (immutable) |
-| Async/await + fetch | 135-147, 149-160, 390, 407 | ambil data cuaca dan kutipan, pakai try/catch |
+| Async/await + fetch | 135-147, 149-160, 389, 406 | ambil data cuaca dan kutipan, pakai try/catch |
 | Method array modern | 61, 90, 95, 125, 198 | `map`, `filter`, `find`, `sort` |
 
 ## API yang Dipakai
