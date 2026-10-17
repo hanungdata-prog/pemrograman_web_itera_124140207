@@ -31,7 +31,6 @@ function Home() {
     }
   }
 
-  // filter berdasarkan status dulu, lalu cocokkan kata kunci ke judul atau penulis
   const bukuTampil = daftarBuku.filter((buku) => {
     const cocokStatus = statusFilter === 'semua' || buku.status === statusFilter
     const kata = kataKunci.toLowerCase()
@@ -43,7 +42,6 @@ function Home() {
   return (
     <div className="home">
       <section className="kotak">
-        {/* key dipakai supaya form ter-reset saat ganti buku yang diedit */}
         <BookForm
           key={bukuDiedit ? bukuDiedit.id : 'baru'}
           bukuAwal={bukuDiedit}
