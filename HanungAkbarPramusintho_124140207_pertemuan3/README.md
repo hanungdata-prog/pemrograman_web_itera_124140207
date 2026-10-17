@@ -57,10 +57,6 @@ Pencarian "andrea"
 
 ![Pencarian](screenshot/pencarian.png)
 
-Filter status "Ingin Dibeli"
-
-![Filter](screenshot/filter-status.png)
-
 Halaman statistik
 
 ![Statistik](screenshot/statistik.png)
