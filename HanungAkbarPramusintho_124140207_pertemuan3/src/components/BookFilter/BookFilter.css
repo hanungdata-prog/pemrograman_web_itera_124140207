@@ -1,0 +1,23 @@
+.book-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.book-filter input {
+  flex: 1;
+}
+
+.book-filter input,
+.book-filter select {
+  padding: 9px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+@media (max-width: 500px) {
+  .book-filter {
+    flex-direction: column;
+  }
+}

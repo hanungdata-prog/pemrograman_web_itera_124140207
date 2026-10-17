@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f1f3f6;
+  color: #222;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.kotak {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btn {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f2f2f2;
+}
+
+.btn-utama {
+  background-color: #2b4c7e;
+  border-color: #2b4c7e;
+  color: white;
+}
+
+.btn-utama:hover {
+  background-color: #213b63;
+}
+
+.btn-hapus {
+  color: #c62828;
+  border-color: #f0c4c4;
+}
+
+.btn-hapus:hover {
+  background-color: #fdecec;
+}

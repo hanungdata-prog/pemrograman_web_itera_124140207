@@ -1,0 +1,17 @@
+.home {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.home h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+@media (max-width: 760px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+}

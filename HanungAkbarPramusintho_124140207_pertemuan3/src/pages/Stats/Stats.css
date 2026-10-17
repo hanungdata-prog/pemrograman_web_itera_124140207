@@ -1,0 +1,63 @@
+.stats h2 {
+  margin-top: 0;
+}
+
+.stats-kartu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.stats-kartu .kotak {
+  text-align: center;
+}
+
+.stats-kartu p {
+  margin: 0;
+  color: #555;
+}
+
+.stats-kartu .angka {
+  font-size: 34px;
+  font-weight: bold;
+  color: #2b4c7e;
+}
+
+.stats h3 {
+  margin-top: 0;
+}
+
+.baris-persen {
+  margin-bottom: 14px;
+}
+
+.bar {
+  height: 12px;
+  background-color: #eee;
+  border-radius: 6px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.bar-isi {
+  height: 100%;
+}
+
+.bar-milik {
+  background-color: #3b7dd8;
+}
+
+.bar-baca {
+  background-color: #e0a526;
+}
+
+.bar-beli {
+  background-color: #9b59c4;
+}
+
+@media (max-width: 600px) {
+  .stats-kartu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

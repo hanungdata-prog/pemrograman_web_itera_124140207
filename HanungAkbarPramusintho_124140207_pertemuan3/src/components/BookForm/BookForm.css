@@ -1,0 +1,41 @@
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.book-form h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.book-form label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.book-form input,
+.book-form select {
+  padding: 9px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.book-form .input-error {
+  border-color: #d93025;
+  background-color: #fff4f3;
+}
+
+.pesan-error {
+  color: #d93025;
+  font-size: 13px;
+  margin: 0;
+}
+
+.tombol-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}

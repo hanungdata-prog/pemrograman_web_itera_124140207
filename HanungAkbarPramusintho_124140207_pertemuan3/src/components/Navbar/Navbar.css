@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 14px 24px;
+  background-color: #2b4c7e;
+  color: white;
+}
+
+.navbar-judul {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 6px;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.navbar-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navbar-menu a.active {
+  background-color: white;
+  color: #2b4c7e;
+}
