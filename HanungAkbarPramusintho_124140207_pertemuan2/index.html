@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1 id="sapaan">Halo!</h1>
+            <p id="tanggal-hari-ini"></p>
+        </div>
+        <div class="jam" id="jam">00:00:00</div>
+    </header>
+
+    <main class="container">
+        <section class="kutipan" id="kotak-kutipan">
+            <p id="isi-kutipan">Memuat kutipan...</p>
+            <div class="kutipan-bawah">
+                <span id="penulis-kutipan"></span>
+                <button id="tombol-kutipan" class="tombol tombol-kecil">Kutipan lain</button>
+            </div>
+        </section>
+
+        <div class="grid">
+            <section class="kartu">
+                <h2>Daftar Tugas</h2>
+
+                <form id="form-tugas">
+                    <input type="text" id="judul-tugas" placeholder="Nama tugas, contoh: Laporan Praktikum 2">
+                    <div class="baris">
+                        <input type="text" id="matkul-tugas" placeholder="Mata kuliah">
+                        <input type="date" id="deadline-tugas">
+                    </div>
+                    <p class="pesan-error" id="error-tugas"></p>
+                    <div class="baris">
+                        <button type="submit" class="tombol" id="tombol-simpan-tugas">Tambah Tugas</button>
+                        <button type="button" class="tombol tombol-abu" id="tombol-batal-tugas" hidden>Batal</button>
+                    </div>
+                </form>
+
+                <div class="filter" id="filter-tugas">
+                    <button class="aktif" data-filter="semua">Semua</button>
+                    <button data-filter="belum">Belum Selesai</button>
+                    <button data-filter="selesai">Selesai</button>
+                </div>
+
+                <p class="info-tugas" id="info-tugas"></p>
+                <ul class="daftar" id="daftar-tugas"></ul>
+            </section>
+
+            <div class="kolom-kanan">
+                <section class="kartu cuaca">
+                    <h2>Cuaca di ITERA</h2>
+                    <div id="isi-cuaca">Memuat data cuaca...</div>
+                </section>
+
+                <section class="kartu">
+                    <h2>Jadwal Kuliah</h2>
+
+                    <form id="form-jadwal">
+                        <input type="text" id="matkul-jadwal" placeholder="Mata kuliah">
+                        <div class="baris">
+                            <select id="hari-jadwal">
+                                <option value="">Pilih hari</option>
+                                <option value="Senin">Senin</option>
+                                <option value="Selasa">Selasa</option>
+                                <option value="Rabu">Rabu</option>
+                                <option value="Kamis">Kamis</option>
+                                <option value="Jumat">Jumat</option>
+                                <option value="Sabtu">Sabtu</option>
+                            </select>
+                            <input type="time" id="jam-jadwal">
+                        </div>
+                        <input type="text" id="ruang-jadwal" placeholder="Ruangan, contoh: GKU 1 - 201">
+                        <p class="pesan-error" id="error-jadwal"></p>
+                        <div class="baris">
+                            <button type="submit" class="tombol" id="tombol-simpan-jadwal">Tambah Jadwal</button>
+                            <button type="button" class="tombol tombol-abu" id="tombol-batal-jadwal" hidden>Batal</button>
+                        </div>
+                    </form>
+
+                    <ul class="daftar" id="daftar-jadwal"></ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
