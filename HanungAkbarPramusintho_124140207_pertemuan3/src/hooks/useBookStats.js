@@ -1,7 +1,6 @@
 import { useMemo } from 'react'
 
 function useBookStats(daftarBuku) {
-  // dihitung ulang hanya kalau daftarBuku berubah
   const statistik = useMemo(() => {
     const total = daftarBuku.length
     const milik = daftarBuku.filter((buku) => buku.status === 'milik').length
