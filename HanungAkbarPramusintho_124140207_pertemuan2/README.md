@@ -47,20 +47,6 @@ Tampilan di HP
 
 Semua kode JavaScript ada di `app.js`.
 
-| Fitur | Baris | Keterangan |
-| --- | --- | --- |
-| `const` | 1-5, 163-184 | konstanta URL, key localStorage, dan elemen DOM |
-| `let` | 117, 200, 373 | variabel yang nilainya berubah (hasil filter, kelas deadline, sapaan) |
-| Arrow function | 7, 10, 12, 61, 90, 125, 259, 283, 309 | `formatTanggal`, `duaDigit`, `keteranganCuaca`, callback map/filter/sort, event listener |
-| Template literals | 42, 45, 190, 204-215, 230-239, 378 | label deadline, info jumlah tugas, render list tugas dan jadwal |
-| Class | 21 (`TaskItem`), 49 (`JadwalItem`), 59 (`DashboardApp`) | model data dan pengelola state aplikasi |
-| Destructuring di parameter | 22, 50, 230 | constructor class dan callback `map` jadwal |
-| Destructuring objek | 141, 154, 284, 398, 408 | ambil data dari response API dan `dataset` tombol |
-| Default parameter | 22, 50 | `id = Date.now()`, `selesai = false` |
-| Spread operator | 78, 84, 100, 106, 117, 129 | tambah/ubah data tanpa mengubah array lama (immutable) |
-| Async/await + fetch | 135-147, 149-160, 389, 406 | ambil data cuaca dan kutipan, pakai try/catch |
-| Method array modern | 61, 90, 95, 125, 198 | `map`, `filter`, `find`, `sort` |
-
 ## API yang Dipakai
 
 - Open-Meteo: `https://api.open-meteo.com/v1/forecast?latitude=-5.36&longitude=105.31&current_weather=true`
